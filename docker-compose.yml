@@ -1,0 +1,9 @@
+services:
+  server:
+    build: .
+    image: go-web-server
+    container_name: server
+    hostname: server
+    restart: always
+    ports:
+      - "8080:8080"
